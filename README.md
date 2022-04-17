@@ -1,17 +1,18 @@
 # About
 
-Vim Syntax Highlight support for CrySL. Until vim-plug or equivalent support
-is added to this repo, please take the following steps to use this file:
+Vim Syntax Highlight support for CrySL.
 
-* Place crysl.vim in syntax/ inside your .vim directory
-* Enable support for syntax highlight by adding the following in your vimrc
+# Installation
 
+Install with your favorite VIM plug manager. E.g. for [vim-plug][]:
+
+``` vim
+Plug 'nettrino/vim_CrySL'
 ```
-autocmd BufNewFile,BufRead *.crysl set filetype=crysl
-```
-
 
 # Disclaimer
 
 This is a PoC syntax highlight file that does not necessarily correspond to
 all the options/semantics of CrySL
+
+[vim-plug]: https://github.com/junegunn/vim-plug

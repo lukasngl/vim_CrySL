@@ -12,9 +12,9 @@ endif
 
 " Keywords
 syntax keyword cryslSectionKeyword CONSTRAINTS ENSURES EVENTS FORBIDDEN
-                                  \ OBJECTS ORDER REQUIRES SPEC
+                                 \ NEGATES OBJECTS ORDER REQUIRES SPEC
 
-syntax keyword cryslExpressionKeyword in after
+syntax keyword cryslOperatorKeyword in after
 
 " Indentifier
 syntax match cryslIdentifier '\v<[a-zA-Z0-9_]+>'
@@ -32,7 +32,7 @@ syntax region cryslCommentBlock start=/\/\*/ end=/\*\//
 
 " Default Highlighting
 highlight default link cryslSectionKeyword Keyword
-highlight default link cryslExpressionKeyword Keyword
+highlight default link cryslOperatorKeyword Operator
 highlight default link cryslIdentifier Identifier
 highlight default link cryslQualifiedClassName Type
 highlight default link cryslPrimitveType Type

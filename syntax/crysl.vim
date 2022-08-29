@@ -23,7 +23,7 @@ syntax keyword cryslPrimitveType boolean byte char short int long float double
 
 " Literals
 syntax region cryslString start='"' end='"' skip='\v(\\\\|\\")' oneline
-syntax match cryslInteger '\v<(\d+|\d+^d+)>'
+syntax match cryslInteger '\v<\d+(\^\d+)?>'
 syntax keyword cryslBoolean true false
 
 " Comments

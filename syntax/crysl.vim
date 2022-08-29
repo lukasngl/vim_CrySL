@@ -24,6 +24,7 @@ syntax keyword cryslPrimitveType boolean byte char short int long float double
 " Literals
 syntax region cryslString start='"' end='"' skip='\v(\\\\|\\")' oneline
 syntax match cryslInteger '\v<(\d+|\d+^d+)>'
+syntax keyword cryslBoolean true false
 
 " Comments
 syntax match cryslCommentInline /\/\/.*/
@@ -37,5 +38,6 @@ highlight default link cryslQualifiedClassName Type
 highlight default link cryslPrimitveType Type
 highlight default link cryslString String
 highlight default link cryslInteger Number
+highlight default link cryslBoolean Constant
 highlight default link cryslCommentInline Comment
 highlight default link cryslCommentBlock Comment

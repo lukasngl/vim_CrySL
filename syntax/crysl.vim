@@ -11,10 +11,10 @@ elseif exists("b:current_syntax")
 endif
 
 " Keywords
-syntax keyword cryslSectionKeyword CONSTRAINTS ENSURES EVENTS FORBIDDEN
-                                 \ NEGATES OBJECTS ORDER REQUIRES SPEC
+syntax keyword cryslSectionKeyword CONSTRAINTS ENSURES EVENTS FORBIDDEN NEGATES
+                                 \ OBJECTS ORDER REQUIRES SPEC EXCEPTIONS
 
-syntax keyword cryslOperatorKeyword in after
+syntax keyword cryslOperatorKeyword in after throws
 
 " Indentifier
 syntax match cryslIdentifier '\v<[a-zA-Z0-9_]+>'
